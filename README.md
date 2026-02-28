@@ -1,2 +1,1 @@
-# MusicShop
-Music Shop  
+# Website Blog
