@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>личный блог / неоновый лайм</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="badge">✹ личный блог</span>
+            <h1>МАКСИМ<br>ЧЕРНЫЙ</h1>
+            <div class="header-description secondary-text">
+                мысли, идеи и заметки о технологиях, дизайне и жизни. без воды.
+            </div>
+            <div class="author-line">
+                <div class="avatar-glass">MЧ</div>
+                <span class="secondary-text">@maxblack · основатель угольного стиля</span>
+            </div>
+        </div>
+
+        <div class="neon-rule"></div>
+
+        <h2>✶ свежие записи</h2>
+        <div class="posts-grid">
+            <!-- пост 1 -->
+            <article class="post-card glass-card">
+                <div class="post-meta">
+                    <span class="date">25 фев 2026</span>
+                    <span class="tag">мысли</span>
+                </div>
+                <a href="news/lime1.html" class="post-title">Стекло и неон: эстетика минимализма</a>
+                <p class="post-excerpt">
+                    Почему именно угольный фон и кислотный лайм? Разбираю визуальный код, вдохновение архитектурой 80х и современным веб-дизайном.   
+                </p>
+                <div class="secondary-text" style="font-size:0.95rem;">читать 4 мин →</div>
+            </article>
+
+            <!-- пост 2 -->
+            <article class="post-card glass-card">
+                <div class="post-meta">
+                    <span class="date">20 фев 2026</span>
+                    <span class="tag">кейс</span>
+                </div>
+                <a href="news/fhtm1.html" class="post-title">Как я сделал этот блог на коленке</a>
+                <p class="post-excerpt">
+                    Inter, воздух, размытие — собрал идеальный личный сайт за ночь. Делюсь стек-треком и лайфхаками. Без фреймворков, только html + css.
+                </p>
+                <div class="secondary-text" style="font-size:0.95rem;">читать 7 мин →</div>
+            </article>
+
+            <!-- пост 3 -->
+            <article class="post-card glass-card">
+                <div class="post-meta">
+                    <span class="date">10 фев 2026</span>
+                    <span class="tag">жизнь</span>
+                </div>
+                <a href="news/live1.html" class="post-title">Цифровой детокс в угольной пещере</a>
+                <p class="post-excerpt">
+                    7 дней без экранов. Впечатления, инсайты и почему без интернета мозг начинает работать иначе. Спойлер: я вернулся к неону.
+                </p>
+                <div class="secondary-text" style="font-size:0.95rem;">читать 5 мин →</div>
+            </article>
+        </div>
+
+        <div class="glass-form-section glass-card">
+            <h3 class="form-title">не пропусти свежее</h3>
+            <div class="form-sub secondary-text">
+                никакого спама. только новые посты и немного неона.
+            </div>
+            <form class="email-form" onsubmit="event.preventDefault(); alert('спасибо за подписку, друг!');">
+                <input type="email" class="glass-input" placeholder="твой email" required>
+                <button type="submit" class="neon-button">подписаться ✹</button>
+            </form>
+            <p class="secondary-text" style="margin-top: 1.5rem; font-size: 0.85rem;">
+                *обещаю писать редко, но со смыслом.
+            </p>
+        </div>
+
+        <div style="display: flex; gap: 3rem; flex-wrap: wrap; margin: 3rem 0;">
+            <div>
+                <h3 style="font-size: 1.3rem; color: #CCFF00; margin-bottom: 1.5rem;">рубрики</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                    <li><a href="#" style="text-decoration: none; color: #fff;">дизайн</a> <span class="secondary-text" style="margin-left: 0.5rem;">12</span></li>
+                    <li><a href="#" style="text-decoration: none; color: #fff;">технологии</a> <span class="secondary-text" style="margin-left: 0.5rem;">20</span></li>
+                    <li><a href="#" style="text-decoration: none; color: #fff;">личное</a> <span class="secondary-text" style="margin-left: 0.5rem;">8</span></li>
+                    <li><a href="#" style="text-decoration: none; color: #fff;">микроблоги</a> <span class="secondary-text" style="margin-left: 0.5rem;">31</span></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="font-size: 1.3rem; color: #CCFF00; margin-bottom: 1.5rem;">лучшее</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                    <li><a href="#" style="text-decoration: none; color: #fff;">▸ 10 правил чистого кода</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #fff;">▸ почему я ушел с найма</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #fff;">▸ обои в стиле неон-лайм</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <span>© 2026 максим черный — блог</span>
+            <div class="social-links">
+                <a href="#">twitter</a>
+                <a href="#">github</a>
+                <a href="#">telegram</a>
+                <a href="#">email</a>
+            </div>
+        </footer>
+
+        <p class="secondary-text" style="text-align: center; margin-top: 2.5rem; font-size: 0.8rem; opacity: 0.6;">
+            made with ████ уголь и лайм
+        </p>
+    </div>
+</body>
+</html>

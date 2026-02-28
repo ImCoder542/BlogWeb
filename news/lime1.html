@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стекло и неон · статья</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #0F0F0F;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 780px; margin: 0 auto; }
+        .glass-card {
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.03);
+            border-radius: 36px;
+            padding: 2.5rem;
+        }
+        .badge {
+            background: rgba(204,255,0,0.08);
+            color: #CCFF00;
+            border-radius: 60px;
+            padding: 0.3rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-block;
+            border: 1px solid rgba(204,255,0,0.2);
+            backdrop-filter: blur(4px);
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+        .meta-line {
+            display: flex;
+            gap: 1.5rem;
+            color: #8E8E93;
+            font-size: 0.95rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid rgba(142,142,147,0.2);
+            padding-bottom: 1.5rem;
+        }
+        p {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            margin-bottom: 1.8rem;
+        }
+        .neon-link {
+            color: #CCFF00;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(204,255,0,0.3);
+        }
+        .neon-link:hover { border-bottom-color: #CCFF00; }
+        .back-home {
+            display: inline-block;
+            margin-top: 3rem;
+            color: #8E8E93;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .back-home:hover { color: #CCFF00; }
+        hr {
+            border: none;
+            height: 1px;
+            background: rgba(142,142,147,0.2);
+            margin: 2rem 0;
+        }
+        .tag {
+            background: rgba(204,255,0,0.05);
+            color: #CCFF00;
+            border-radius: 60px;
+            padding: 0.2rem 1rem;
+            font-size: 0.8rem;
+            border: 1px solid rgba(204,255,0,0.15);
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .glass-card { padding: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <span class="badge">✹ эстетика</span>
+            <h1>Стекло и неон: эстетика минимализма</h1>
+            <div class="meta-line">
+                <span>28 февраля 2026</span>
+                <span class="tag">мысли</span>
+                <span>4 мин чтения</span>
+            </div>
+
+            <p>Угольный фон — это не просто цвет. Это отсутствие визуального шума. Когда я выбирал палитру для блога, то перебрал десятки вариантов, но именно #0F0F0F даёт ту самую глубину, из которой любой акцент вырывается наружу. А акцент — неоновый лайм #CCFF00. Кислотный, но не раздражающий, если соблюдать дозировку.</p>
+
+            <p>Почему вообще стекло? Эффект размытия (glassmorphism) добавляет слоистости. Ты как будто смотришь сквозь чистое матовое стекло на контент. Это создаёт лёгкость, даже когда текста много. В сочетании с жёстким геометрическим Inter получается стерильно, но тепло.</p>
+
+            <p>Я вдохновлялся архитектурой 80-х: неон, бетон, зеркальные поверхности. Только перенёс это в веб. Холодный серый для второстепенного — <span style="color:#8E8E93">вот такой, видишь?</span> — он задаёт иерархию, не перетягивая одеяло.</p>
+
+            <p>Этот пост — манифест. Минимализм не значит «скучно». Минимализм значит «точно». Каждый элемент на своём месте.</p>
+
+            <hr>
+            <a href="../index.html" class="back-home" onclick="history.back(); return false;">← ко всем записям</a>
+        </div>
+    </div>
+</body>
+</html>

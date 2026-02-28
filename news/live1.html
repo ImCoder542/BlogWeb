@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровой детокс · статья</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #0F0F0F;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+        }
+        .container { max-width: 780px; margin: 0 auto; }
+        .glass-card {
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.03);
+            border-radius: 36px;
+            padding: 2.5rem;
+        }
+        .badge {
+            background: rgba(204,255,0,0.08);
+            color: #CCFF00;
+            border-radius: 60px;
+            padding: 0.3rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-block;
+            border: 1px solid rgba(204,255,0,0.2);
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+        .meta-line {
+            display: flex;
+            gap: 1.5rem;
+            color: #8E8E93;
+            font-size: 0.95rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid rgba(142,142,147,0.2);
+            padding-bottom: 1.5rem;
+        }
+        p {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            margin-bottom: 1.8rem;
+        }
+        .quote {
+            border-left: 4px solid #CCFF00;
+            padding: 1.2rem 2rem;
+            background: rgba(204,255,0,0.02);
+            border-radius: 24px;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #ddd;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 2.5rem;
+            color: #8E8E93;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .back-home:hover { color: #CCFF00; }
+        hr { border: 1px solid rgba(142,142,147,0.2); margin: 2rem 0; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .glass-card { padding: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <span class="badge">✹ жизнь</span>
+            <h1>Цифровой детокс в угольной пещере</h1>
+            <div class="meta-line">
+                <span>10 февраля 2026</span>
+                <span class="tag">жизнь</span>
+                <span>5 мин чтения</span>
+            </div>
+
+            <p>Представь: ни одного уведомления. Экран телефона — чёрный зеркальный прямоугольник, который просто лежит на столе. Я уехал в место, где интернет ловил только на вершине холма, и то по ветру. Семь дней без экранов.</p>
+
+            <p>Первые два дня — ломка. Рука сама тянется к карману, хотя там пусто. К третьему дню мозг перестаёт фрагментироваться. Я начал замечать текстуры: кора деревьев, трещины на асфальте, угольный цвет ночного неба (да, прямо как фон этого блога).</p>
+
+            <div class="quote">
+                «Когда убираешь интернет, остаёшься только ты и твои мысли. Иногда это страшно, но чаще — невероятно глубоко».
+            </div>
+
+            <p>Вернувшись, я понял: неон мне нужен. Но дозированно. Теперь я проверяю почту два раза в день, а соцсети открываю только по расписанию. Этот блог — тоже часть детокса. Писать сюда — способ структурировать мысли, а не убегать от них.</p>
+
+            <p>Попробуй выключить всё на 24 часа. Просто попробуй. Угольная тишина лечит.</p>
+
+            <hr>
+            <a href="../index.html" class="back-home" onclick="history.back(); return false;">← ко всем записям</a>
+        </div>
+    </div>
+</body>
+</html>

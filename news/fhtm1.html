@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как я сделал этот блог · статья</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #0F0F0F;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+        }
+        .container { max-width: 780px; margin: 0 auto; }
+        .glass-card {
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.03);
+            border-radius: 36px;
+            padding: 2.5rem;
+        }
+        .badge {
+            background: rgba(204,255,0,0.08);
+            color: #CCFF00;
+            border-radius: 60px;
+            padding: 0.3rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-block;
+            border: 1px solid rgba(204,255,0,0.2);
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.9rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+        .meta-line {
+            display: flex;
+            gap: 1.5rem;
+            color: #8E8E93;
+            font-size: 0.95rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid rgba(142,142,147,0.2);
+            padding-bottom: 1.5rem;
+        }
+        p {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            margin-bottom: 1.8rem;
+        }
+        .code-inline {
+            background: rgba(204,255,0,0.1);
+            color: #CCFF00;
+            padding: 0.2rem 0.5rem;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 1rem;
+            border: 1px solid rgba(204,255,0,0.2);
+        }
+        .neon-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        .neon-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .neon-list li::before {
+            content: "✹";
+            color: #CCFF00;
+            position: absolute;
+            left: 0;
+            font-size: 1rem;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 2.5rem;
+            color: #8E8E93;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .back-home:hover { color: #CCFF00; }
+        hr { border: 1px solid rgba(142,142,147,0.2); margin: 2rem 0; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .glass-card { padding: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <span class="badge">✹ кейс</span>
+            <h1>Как я сделал этот блог на коленке</h1>
+            <div class="meta-line">
+                <span>20 февраля 2026</span>
+                <span class="badge" style="background:transparent; border-color:#8E8E93; color:#8E8E93;">кейс</span>
+                <span>7 мин чтения</span>
+            </div>
+
+            <p>Вечер пятницы, ноутбук, желание записать мысли. И никаких CMS. Только <span class="code-inline">.html</span> и <span class="code-inline">.css</span>. Я сознательно не стал подключать реакт или что‑то тяжелое. Блог — это место для текста, а не для гидрации.</p>
+
+            <p>Стек:</p>
+            <ul class="neon-list">
+                <li>один <span class="code-inline">index.html</span> (ты видишь его);</li>
+                <li>шрифт Inter — подключил с гугл-фонтс;</li>
+                <li>три стеклянные карточки через <span class="code-inline">backdrop-filter: blur(12px)</span>;</li>
+                <li>неоновая кнопка с box-shadow.</li>
+            </ul>
+
+            <p>Самое сложное было поймать баланс размытия. Если переборщить, текст начинает плыть. Остановился на <span class="code-inline">rgba(255,255,255,0.02)</span> фоне и размытии 12px — фон чуть угадывается, но контент остаётся кристально чётким.</p>
+
+            <p>Адаптивность сделал на коленке через пару медиа-запросов. Воздух сохранил — отступы везде <span class="code-inline">2rem</span> и больше. И да, никакого JavaScript, кроме заглушки на форме подписки. Чисто, быстро, минималистично.</p>
+
+            <hr>
+            <a href="../index.html" class="back-home" onclick="history.back(); return false;">← ко всем записям</a>
+        </div>
+    </div>
+</body>
+</html>
